@@ -1,0 +1,446 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy 1st Monthsary ❤️</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(135deg, #21152f, #6b315f, #271b45);
+        color: white;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+
+    /* Floating background */
+    .floating {
+        position: fixed;
+        bottom: -50px;
+        font-size: 25px;
+        animation: float 8s linear infinite;
+        opacity: 0.8;
+        pointer-events: none;
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateY(0) rotate(0deg);
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(-110vh) rotate(360deg);
+            opacity: 0;
+        }
+    }
+
+    .container {
+        width: 90%;
+        max-width: 850px;
+        margin: auto;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .small-text {
+        background: rgba(255,255,255,0.1);
+        padding: 10px 20px;
+        border-radius: 30px;
+    }
+
+    h1 {
+        font-size: clamp(45px, 10vw, 90px);
+        line-height: 1;
+        margin: 25px 0;
+        color: #ffd1eb;
+        text-shadow: 0 0 25px #ff80c0;
+    }
+
+    .hero p {
+        font-size: 20px;
+        max-width: 600px;
+        line-height: 1.7;
+    }
+
+    /* Cards */
+    .card {
+        margin: 40px 0;
+        padding: 35px;
+        border-radius: 25px;
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.2);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+        color: #ffd1eb;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    /* Love letter */
+    .letter {
+        font-family: Georgia, serif;
+        font-size: 18px;
+        line-height: 1.9;
+        color: #fff5fb;
+    }
+
+    .signature {
+        text-align: right;
+        color: #ffc4e6;
+        font-style: italic;
+    }
+
+    /* Button */
+    .button-area {
+        text-align: center;
+    }
+
+    button {
+        border: none;
+        padding: 15px 25px;
+        border-radius: 30px;
+        background: linear-gradient(135deg, #ff85c8, #b987ff);
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        transform: scale(1.08);
+        box-shadow: 0 0 25px #ff91cf;
+    }
+
+    #surprise {
+        display: none;
+        margin-top: 25px;
+        padding: 25px;
+        border-radius: 20px;
+        background: rgba(255,190,225,0.15);
+        text-align: center;
+        animation: appear 0.7s ease;
+    }
+
+    @keyframes appear {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    footer {
+        text-align: center;
+        padding: 40px 0;
+        color: #e8cfe2;
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+
+        .card {
+            padding: 25px 20px;
+        }
+
+        .letter {
+            font-size: 16px;
+        }
+
+        .hero p {
+            font-size: 17px;
+        }
+
+        h2 {
+            font-size: 27px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div id="floating-container"></div>
+
+<div class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="small-text">
+            🌸 A little message from my heart 🌸
+        </div>
+
+        <h1>
+            Happy 1st<br>
+            Monthsary ❤️
+        </h1>
+
+        <!-- CHANGE HER NAME HERE -->
+        <p>
+            To my beautiful <strong>Denkaa</strong> 💗
+        </p>
+
+        <p>
+            One month of us... and hopefully a lifetime of beautiful
+            memories together. 🌙✨
+        </p>
+
+    </section>
+
+
+    <!-- LOVE LETTER -->
+    <section class="card">
+
+        <h2>💌 TO MY Love</h2>
+
+        <div class="letter">
+
+            <p>
+                Dear my love, 🌸❤️
+            </p>
+
+            <p>
+                Happy 1st Monthsary, babe! 🥹💗
+            </p>
+
+            <p>I know you’re probably already asleep, but I just 
+                wanted to leave this here for you to see when you 
+                wake up.Even though we’re far from each other and 
+                can’t celebrate or give each other gifts, I’m still 
+                really happy that I have you. You mean so much to me,
+                and I’m so grateful for us.I hope we get to celebrate 
+                many more months together and make lots of memories when 
+                we’re finally together.
+                
+            </p>
+
+            <p>
+                Even though we're far apart, I still feel close
+                to you in the little moments. Sometimes I wish
+                I could just appear beside you like an anime
+                character and give you the biggest hug ever. 😭❤️
+            </p>
+
+            <p>
+                Thank you for staying with me, understanding me,
+                and simply being you. I know we won't always have
+                perfect days, but I want us to keep choosing each
+                other, supporting each other, and making beautiful
+                memories together.
+            </p>
+
+            <p>
+                This is only our first month, so I hope this is
+                just the beginning of our story. 🌙✨
+                I want to see where our little love story takes us —
+                more months, more memories, more laughs, more silly
+                moments, and hopefully a lot more "I love yous." 💕
+            </p>
+
+            <p>
+                Happy 1st Monthsary, my love. 🌸
+            </p>
+
+            <p>
+                No matter how far you are, you'll always have
+                a special place in my heart.
+            </p>
+
+            <p>
+                <strong>
+                    I love youuu so muchhh. ❤️🫶
+                </strong>
+            </p>
+
+            <p class="signature">
+                — Yours always,<br>
+                Sonam Chejay 💗
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SURPRISE -->
+    <section class="card">
+
+        <h2>🎁 One More Thing...</h2>
+
+        <div class="button-area">
+
+            <p>
+                I have a little surprise for you... 👀💗
+            </p>
+
+            <button onclick="showSurprise()">
+                💗 Open My Surprise 💗
+            </button>
+
+        </div>
+
+        <div id="surprise">
+
+            <h2>🌸 You + Me 🌸</h2>
+
+            <p>
+                If I could choose one person to keep beside me
+                through every chapter of my life...
+            </p>
+
+            <p>
+                <strong>
+                    I'd choose you. Again and again. ❤️
+                </strong>
+            </p>
+
+            <p>
+                Happy 1st Monthsary, my love! 🥹🫶
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        Made with ❤️ just for you 🌸
+    </footer>
+
+</div>
+
+
+<script>
+
+    /* Create floating hearts and flowers */
+
+    const container =
+        document.getElementById("floating-container");
+
+    const symbols = [
+        "❤️",
+        "💗",
+        "💖",
+        "💕",
+        "🌸",
+        "🌷",
+        "✨"
+    ];
+
+    function createFloating() {
+
+        const item = document.createElement("div");
+
+        item.classList.add("floating");
+
+        item.innerHTML =
+            symbols[Math.floor(Math.random() * symbols.length)];
+
+        item.style.left =
+            Math.random() * 100 + "vw";
+
+        item.style.animationDuration =
+            (5 + Math.random() * 5) + "s";
+
+        item.style.fontSize =
+            (18 + Math.random() * 20) + "px";
+
+        container.appendChild(item);
+
+        setTimeout(() => {
+            item.remove();
+        }, 10000);
+    }
+
+    setInterval(createFloating, 500);
+
+
+    /* Surprise button */
+
+    function showSurprise() {
+
+        const surprise =
+            document.getElementById("surprise");
+
+        surprise.style.display = "block";
+
+        /* Heart explosion */
+
+        for (let i = 0; i < 15; i++) {
+
+            const heart =
+                document.createElement("div");
+
+            heart.innerHTML = "💗";
+
+            heart.style.position = "fixed";
+            heart.style.left = "50%";
+            heart.style.top = "50%";
+            heart.style.fontSize = "25px";
+            heart.style.zIndex = "999";
+
+            document.body.appendChild(heart);
+
+            const x =
+                (Math.random() - 0.5) * 500;
+
+            const y =
+                (Math.random() - 0.5) * 500;
+
+            heart.animate(
+                [
+                    {
+                        transform: "translate(-50%, -50%)",
+                        opacity: 1
+                    },
+                    {
+                        transform:
+                            `translate(${x}px, ${y}px)`,
+                        opacity: 0
+                    }
+                ],
+                {
+                    duration: 1200,
+                    easing: "ease-out"
+                }
+            );
+
+            setTimeout(() => {
+                heart.remove();
+            }, 1200);
+        }
+    }
+
+</script>
+
+</body>
+</html>
